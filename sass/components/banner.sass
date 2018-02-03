@@ -1,0 +1,55 @@
+.banner
+  background-color: rgba(204,153,102,0.9)
+  color: white
+  display: inline-block
+  padding: 5px
+  position: absolute
+  top: 155px
+  left: 15%
+  z-index: 500
+  transition-duration: 1s
+  &__move
+    left: 25%
+  a
+    text-decoration: none
+    color: white
+
+
+@media screen and (min-width: 1300px)
+  .banner
+    left: 18%
+
+
+@media screen and (min-width: 1200px) and (max-width: 1299px)
+  left: 10%
+
+
+
+@media screen and (min-width: 1200px)
+  .banner
+    top: 240px
+    height: 130px
+    padding-top: 20px
+    text-align: center
+    width: 35%
+    font-size: 35px
+
+@media screen and (min-width: 992px)
+
+@media screen and (max-width: 991px)
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+  .banner
+    top: 240px
+    height: 65px
+    width: 25%
+    font-size: 20px
+    left: 10%
+
+
+@media screen and (max-width: 767px)
+  .banner
+    top: 250px
+@media screen and (min-width: 320px) and (max-width: 480px)
+  .banner
+    top: 200px

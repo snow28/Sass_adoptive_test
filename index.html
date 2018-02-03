@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blagoyart</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="body">
+
+
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__img" src="img/icons-xs/logo.png">
+                <p class="header__description">Интернет-магазин "Благой арт"</p>
+            </div>
+            <div class="header__search">
+                <input type="text" placeholder="Введите название или артикул">
+                <img src="img/search.png">
+            </div>
+            <div class="header__contacts">
+                <div class="header__contacts-number">
+                    <p>+7 (800) 707-81-39</p>
+                </div>
+                <div class="header__contacts-time">
+                    <p class="header__contacts-time_yellow">ПН-ПТ с 9:00 до 18:00</p>
+                    <p>Доставка по РФ и СНГ</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item nav__list-menu js-nav-menu"><div class="nav__list-menu_open"></div></li>
+                <li class="nav__list-item nav__list-home"></li>
+                <li class="nav__list-item nav__list-search"></li>
+                <li class="nav__list-item nav__list-shop"></li>
+                <li class="nav__list-item nav__list-signin"></li>
+                <li class="nav__list-item nav__list-call"></li>
+            </ul>
+        </nav>
+
+        <div class="info__wrapper">     <!-- how to call info__wrapper properly-->
+            <div class="info">
+                <img class="info__img info__telega" src="img/telega.png"> <!-- change to info__img_telega  -->
+                <img class="info__img" src="img/number_10.png">
+                <p>ТОВАРОВ /</p><p class="info__bold"> 56 789р</p>
+                <img class="info__img" src="img/signin.png">
+                <p class="info__signin info__bold">ВОЙТИ</p>
+            </div>
+
+
+                    <!-- MENU for normal devices-->
+            <div class="nav-md">
+                <ul class="nav-md__list">
+                    <li class="nav-md__list-item nav-md__list-menu nav-md__list-menu_js">
+                        <img class="nav-md__menu-icon" src="img/menu-icon.png">
+                        Каталог товаров
+                        <img class="nav-md__menu-icon" src="img/arrrow_down.png">
+                    </li>
+                    <li class="nav-md__list-item nav__list-home">Условия работы</li>
+                    <li class="nav-md__list-item nav__list-search">Скидки</li>
+                    <li class="nav-md__list-item nav__list-shop">Оплата и Доставка</li>
+                    <li class="nav-md__list-item nav__list-signin">Документы</li>
+                    <li class="nav-md__list-item nav__list-call">Контакты</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="menu">
+            <p class="menu__header">Каталог <br/>товаров</p>
+            <ul class="menu__list">
+                <li class="menu__list-item woman-gifst-open-js">
+                    <a href="#">Свадебная бижутерия</a>
+                    <img src="img/arrrow_down.png">
+                </li>
+
+                <li class="menu__list-item"><a href="#">Аксессуары для волос</a></li>
+                <li class="menu__list-item"><a href="#">Броши</a></li>
+
+
+                <div class="menu__drop-down">
+                    <li class="menu__list-item man-gifts-open-js">
+                        <a href="#">Мужские аксессуары</a>
+                        <img src="img/arrrow_down.png">
+                    </li>
+                    <ul class="man-gifts-ul-js menu__drop-down_ul">
+                        <p>МУЖСКАЯ БИЖУТЕРИЯ</p>
+                        <li><span>Браслеты</span></li>
+                        <li><span>Кулоны</span></li>
+                        <li><span>Зажими и запонки</span></li>
+                    </ul>
+                </div>
+
+                <li class="menu__list-item"><a href="#">Клатчи</a></li>
+                <li class="menu__list-item"><a href="#">Детская бижутерия</a></li>
+                <li class="menu__list-item"><a href="#">Демонстрационное оборудование</a></li>
+            </ul>
+
+        </div>
+
+        <!-- md-lg navs  -->
+
+
+        <div class="banner">
+            <a href="#"><p>Новая коллекция<br/>SWAROVSKI уже здесь!</p></a>
+        </div>
+        <div class="slider slider__xs">
+            <img src="img/icons-xs/slider-img.png">
+            <img src="img/icons-xs/slider-img.png">
+            <img src="img/icons-xs/slider-img.png">
+        </div>
+
+        <div class="slider__md slider">
+            <img src="img/slider-img-md.png">
+            <img src="img/slider-img-md.png">
+            <img src="img/slider-img-md.png">
+        </div>
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="slick/slick.js"></script>
+        <script src="js/custom.js"></script>
+        <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+        //]]></script>
+    </body>
+</html>
