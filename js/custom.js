@@ -22,13 +22,18 @@ $(document).ready(function(){
 
 
     $('.body').on('click', function (e) {  // как тут правильно сделать?????
-        if (!$(e.target).hasClass('nav-md__list-menu') && !$(e.target).parent().hasClass('menu__list-item')) {
-            console.log('2');
+        if (!$(e.target).hasClass('nav-md__list-menu')
+            && !$(e.target).parent().hasClass('menu__list-item')
+            && !$(e.target).hasClass('js-nav-menu')
+            && !$(e.target).parent().hasClass('js-nav-menu')
+        ) {
             if($('.menu').hasClass('menu__show')){
                 $('.menu').toggleClass('menu__show');
             }
         }
     });
+
+
 
 
 

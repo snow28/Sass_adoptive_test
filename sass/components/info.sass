@@ -2,6 +2,9 @@
   display: flex
   height: 20px
   color: $blue
+  &__wrapper
+    max-width: 1240px
+    margin: auto
   img
     max-height: 20px
     min-width: 22px
@@ -49,9 +52,15 @@
 @media screen and (min-width: 768px) and (max-width: 1199px )
   .info
     width: 40%
-    margin-left: 59%
+    margin-left: 60%
     margin-bottom: 15px
     img
       width: 20px
+@media screen and (min-width: 768px) and (max-width: 790px)
+  .info
+    p
+      font-size: 14px
+  .header__contacts-time
+    font-size: 9px
 
 @media screen and (max-width: 767px)
